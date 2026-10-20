@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="keywords" content="{{KEYWORDS}}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="dsom-w">
+<link rel="canonical" href="{{SITE_URL}}">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:url" content="{{SITE_URL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta property="article:modified_time" content="{{MODIFIED}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%B3%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{{JSONLD}}</script>
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--border:#d1d9e0;--link:#0969da;--code:#f6f8fa;--tip:#1a7f37;--tipbg:#f0fff4;--quote:#656d76;--accent:#0969da}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--border:#30363d;--link:#4493f8;--code:#161b22;--tip:#3fb950;--tipbg:#12261e;--quote:#9198a1;--accent:#4493f8}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;word-break:break-word}
+main{max-width:860px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.7em;line-height:1.3;margin:.4em 0 .6em}
+h2{font-size:1.4em;margin:2em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--border)}
+h3{font-size:1.15em;margin:1.6em 0 .5em}
+h4{font-size:1em;margin:1.2em 0 .4em}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+p{margin:.8em 0}
+hr{border:0;border-top:1px solid var(--border);margin:2em 0}
+blockquote{margin:1em 0;padding:.2em 1em;border-left:4px solid var(--border);color:var(--quote)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;background:var(--code);padding:.15em .4em;border-radius:4px}
+pre{background:var(--code);padding:12px;border-radius:6px;overflow:auto}pre code{background:none;padding:0}
+img{max-width:100%;height:auto;border:1px solid var(--border);border-radius:6px;display:block;margin:.6em 0}
+.table-wrap{overflow-x:auto;margin:1em 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;min-width:100%;font-size:.93em}
+th,td{border:1px solid var(--border);padding:7px 11px;text-align:left;vertical-align:top}
+th{background:var(--code);font-weight:600}
+tr:nth-child(even) td{background:color-mix(in srgb,var(--code) 55%,transparent)}
+ul,ol{padding-left:1.6em}li{margin:.25em 0}
+.alert{margin:1.2em 0;padding:.8em 1em;border-left:4px solid var(--tip);background:var(--tipbg);border-radius:0 6px 6px 0}
+.alert .alert-title{margin:0 0 .3em;font-weight:700;color:var(--tip)}
+.alert p{margin:.4em 0}
+.site-head{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-size:.9em;color:var(--muted);margin-bottom:8px}
+.site-head a{color:var(--muted)}
+.site-foot{margin-top:48px;padding-top:16px;border-top:1px solid var(--border);font-size:.9em;color:var(--muted)}
+.cta{display:inline-block;background:var(--accent);color:#fff!important;padding:10px 18px;border-radius:8px;font-weight:600;margin:.4em 0}
+.cta:hover{text-decoration:none;filter:brightness(1.08)}
+</style>
+</head>
+<body>
+<main>
+<header class="site-head">
+  <a href="{{REPO_URL}}" target="_blank" rel="noopener">GitHub 仓库</a>
+  <span>·</span>
+  <time datetime="{{MODIFIED}}">更新于 {{MODIFIED}}</time>
+</header>
+<article>
+<h1>{{TITLE}}</h1>
+{{CONTENT}}
+</article>
+<footer class="site-foot">
+  本页由 <a href="{{REPO_URL}}" target="_blank" rel="noopener">README.md</a> 自动生成；内容按 CC BY-NC-SA 4.0 许可。发现价格或流程变化，欢迎在仓库提 Issue 或 PR。
+</footer>
+</main>
+</body>
+</html>
