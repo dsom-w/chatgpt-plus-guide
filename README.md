@@ -35,6 +35,7 @@
 - [常见问题 FAQ](#常见问题-faq)
 - [卡在哪一步就看哪一段：自助排查](#卡在哪一步就看哪一段自助排查)
 - [一句话总结](#一句话总结)
+- [相关页面](#相关页面)
 
 ---
 
@@ -143,6 +144,8 @@ OpenAI 的收款走 Stripe，Stripe 对**发卡行所在地**和**账单地址**
 
 结论：这是大多数人的最终选择。怎么挑，下面有一节专门讲；「会话信息 + 自动充值」这种交付方式具体长什么样，下一节放实测截图。
 
+**👉 [直接去 okai66.com 自助开通 ChatGPT Plus（支付宝 / 微信，不要密码）](https://okai66.com/?utm_source=github&utm_medium=readme&utm_campaign=plus-guide-routed)**
+
 ---
 
 ## 实测：支付宝 / 微信自助充值 ChatGPT Plus（附截图）
@@ -153,29 +156,29 @@ OpenAI 的收款走 Stripe，Stripe 对**发卡行所在地**和**账单地址**
 
 打开套餐页，选 Plus、Pro 100 或 Pro 200，点「立即充值」。
 
-![选择套餐](images/chatgpt/1-1-plans.webp)
+![OKAI66 套餐页：选择 ChatGPT Plus、Pro 100 或 Pro 200 开始支付宝微信充值](images/chatgpt/1-1-plans.webp)
 
 ### 第 2 步：复制并粘贴账号信息
 
 **2.1** 在电脑或手机浏览器里登录你要充值的 ChatGPT 账号（建议 Chrome，关掉会改动页面的插件）。
 
-**2.2** 在同一个浏览器里打开 `chatgpt.com/api/auth/session`，页面会显示一段 JSON 文本，全选复制。这段内容叫「会话信息」，它只能证明「我现在登录着这个账号」，**不包含密码**，也不能用来改密码或登出你。
+**2.2** 在同一个浏览器里打开 `chatgpt.com/api/auth/session`，页面会显示一段 JSON 文本，全选复制。这段内容叫「会话信息」，是你当前这次登录的临时凭证：**不包含密码**，拿到它也改不了密码、改不了邮箱、登不出你；它有有效期，充值完成后平台会立即删除，你也随时可以在「设置 → 安全 → 登出所有设备」让它作废。
 
-![复制会话信息](images/chatgpt/2-2-copy-session.webp)
+![在浏览器打开 chatgpt.com/api/auth/session 复制 ChatGPT 会话信息](images/chatgpt/2-2-copy-session.webp)
 
 **2.3** 回到下单页，粘贴到输入框。系统会自动校验并显示这个账号的邮箱、用户名和当前套餐，确认是你要充的账号。如果账号已经是 Plus，页面会提示「将覆盖现有会员」；如果账号处于欠费 / 宽限期或在 Team 工作区里，这一步就会直接拦下来，不会让你白付钱。
 
-![自动校验账号](images/chatgpt/2-3-precheck.webp)
+![粘贴会话信息后系统自动校验 ChatGPT 账号邮箱与当前套餐](images/chatgpt/2-3-precheck.webp)
 
 ### 第 3 步：确认订单并付款
 
 **3.1** 填一个你记得住的手机号或邮箱（只用于查订单和售后），点「确认订单，去支付」。
 
-![确认订单](images/chatgpt/3-1-confirm.webp)
+![填写联系方式并确认 ChatGPT Plus 充值订单](images/chatgpt/3-1-confirm.webp)
 
 **3.2** 选支付宝或微信。电脑上扫码，手机上直接跳转付款。页面会显示商品金额和预估手续费，实付以支付页面为准。
 
-![选择支付方式](images/chatgpt/3-2-pay.webp)
+![选择支付宝或微信支付 ChatGPT Plus 订单](images/chatgpt/3-2-pay.webp)
 
 > 在线付款有 2% 的第三方支付手续费（支付平台收的）。不想出这笔钱，可以加客服微信直接开通，**免手续费**。
 
@@ -183,15 +186,19 @@ OpenAI 的收款走 Stripe，Stripe 对**发卡行所在地**和**账单地址**
 
 **4.1** 付款后系统自动充值，订单页依次显示「已付款 → 充值中 → 完成」。完成后可以下载订单凭证。
 
-![充值完成](images/chatgpt/4-1-success.webp)
+![ChatGPT Plus 自动充值完成，订单状态显示已完成](images/chatgpt/4-1-success.webp)
 
 **4.2** 回到 ChatGPT 刷新页面（没变化就退出重登），在「设置 → 账单」里确认已经显示 Plus 和到期日。
 
-![核对会员](images/chatgpt/4-2-account.webp)
+![ChatGPT 设置账单页显示 Plus 会员与到期日](images/chatgpt/4-2-account.webp)
 
 页面上会写「套餐已取消，将不再续订」，**这是正常的**：代充开通的会员不会自动扣款，到期前回来再充一次就行。
 
 整个过程平台拿不到你的密码，充值完成后会话信息也会自动删除。如果任何原因导致没充成功，**原路退款**，不设门槛。
+
+**👉 [照着上面 4 步，现在就去开通 → okai66.com](https://okai66.com/?utm_source=github&utm_medium=readme&utm_campaign=plus-guide-steps)**
+
+要开 **Pro 100 / Pro 200**，流程完全一样，细节和注意事项见 [ChatGPT Pro 国内充值指南](https://dsom-w.github.io/chatgpt-plus-guide/chatgpt-pro/)。
 
 ---
 
@@ -203,17 +210,21 @@ Claude 比 ChatGPT 更难用国内方式付款：官网同样拒国内卡，App 
 
 1. 登录 claude.ai，点左下角头像 → Settings → Account，复制 Organization ID（一串 `8-4-4-4-12` 格式的字符，例如 `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`）。
 
-   ![复制 Organization ID](images/claude/2-1-org-id.webp)
+   ![在 claude.ai Settings → Account 复制 Claude 账号 Organization ID](images/claude/2-1-org-id.webp)
 
 2. 在下单页选 Claude Pro，把 ID 粘贴两次（防止手误），系统自动校验。
 
-   ![校验账号 ID](images/claude/2-2-verify.webp)
+   ![下单页粘贴 Claude Organization ID 并自动校验账号](images/claude/2-2-verify.webp)
 
 3. 填联系方式 → 支付宝 / 微信付款 → 等待到账，和 ChatGPT 完全一样。
 
-   ![Claude 充值完成](images/claude/4-1-success.webp)
+   ![Claude Pro 支付宝微信充值完成，订单状态显示已完成](images/claude/4-1-success.webp)
 
 4. 回到 claude.ai，在「Settings → Billing」确认已显示 Pro。
+
+Claude 的价格、Organization ID 安全性、常见失败原因，单独写了一篇：[Claude Pro 国内开通指南](https://dsom-w.github.io/chatgpt-plus-guide/claude-pro/)。
+
+**👉 [去 okai66.com 开通 Claude Pro（只要账号 ID，支付宝 / 微信）](https://okai66.com/?utm_source=github&utm_medium=readme&utm_campaign=plus-guide-claude)**
 
 ---
 
@@ -315,7 +326,7 @@ Claude 比 ChatGPT 更难用国内方式付款：官网同样拒国内卡，App 
 
 ### 阶段二：进了支付页，但付不进去
 
-- 官网 `Your card was declined`：换路线，不要反复试。
+- 官网 `Your card was declined`：换路线，不要反复试。为什么会被拒、哪些情况还能抢救，见 [ChatGPT 绑卡被拒 Your card was declined 怎么办](https://dsom-w.github.io/chatgpt-plus-guide/card-declined/)。
 - 支付宝 / 微信扫码没反应：刷新订单页重新生成二维码；手机浏览器下单直接跳转付款更稳。
 - 付款金额和套餐价不一致：差额是 2% 支付手续费，属正常；想免掉就加客服开通。
 
@@ -332,7 +343,16 @@ Claude 比 ChatGPT 更难用国内方式付款：官网同样拒国内卡，App 
 
 有海外卡走官网；有 iPhone 愿意折腾走礼品卡；其它情况选一个**不要密码、能自助下单、不成功原路退款**的代充，3 分钟搞定。
 
-文中实测用的平台：[okai66.com](https://okai66.com/?utm_source=github&utm_medium=readme&utm_campaign=plus-guide)，站内有完整的 ChatGPT / Claude 图文教程。
+**👉 [okai66.com — 支付宝 / 微信开通 ChatGPT Plus / Pro、Claude Pro](https://okai66.com/?utm_source=github&utm_medium=readme&utm_campaign=plus-guide-bottom)**，站内有完整的 ChatGPT / Claude 图文教程。
+
+---
+
+## 相关页面
+
+- [Claude Pro 国内开通指南：支付宝 / 微信付款，只要账号 ID](https://dsom-w.github.io/chatgpt-plus-guide/claude-pro/)
+- [ChatGPT Pro 国内充值指南：Pro 100 / Pro 200 怎么开](https://dsom-w.github.io/chatgpt-plus-guide/chatgpt-pro/)
+- [ChatGPT 绑卡提示 Your card was declined 怎么办](https://dsom-w.github.io/chatgpt-plus-guide/card-declined/)
+- 本文网页版（手机阅读更方便）：[dsom-w.github.io/chatgpt-plus-guide](https://dsom-w.github.io/chatgpt-plus-guide/)
 
 ---
 

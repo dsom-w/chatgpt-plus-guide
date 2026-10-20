@@ -1,0 +1,15 @@
+# ChatGPT Plus 开通总览
+
+> 没有海外卡怎么开 ChatGPT Plus？2026 年国内四条路线逐条对比成本与风险：官方直付、虚拟卡、美区礼品卡、代充；附支付宝 / 微信 3 分钟自助充值实测截图，不要密码、不换号，Claude Pro 同样适用。
+
+## 页面
+
+- [ChatGPT Plus 国内开通指南（2026）：支付宝 / 微信 3 分钟自助充值，附海外卡、礼品卡、代充对比](https://dsom-w.github.io/chatgpt-plus-guide/): 没有海外卡怎么开 ChatGPT Plus？2026 年国内四条路线逐条对比成本与风险：官方直付、虚拟卡、美区礼品卡、代充；附支付宝 / 微信 3 分钟自助充值实测截图，不要密码、不换号，Claude Pro 同样适用。
+- [ChatGPT 绑卡提示「Your card was declined」怎么办？原因、能不能救、国内替代方案](https://dsom-w.github.io/chatgpt-plus-guide/card-declined/): ChatGPT / Claude 升级时提示 Your card was declined、支付失败、Your card has been declined 的真实原因（发卡行地区、账单地址、Stripe 风控），哪些情况还能救、为什么不能反复重试，以及国内用户 2026 年可行的替代付款方式。
+- [ChatGPT Pro 国内充值指南（2026）：Pro 100 / Pro 200 怎么开，和 Plus 差在哪](https://dsom-w.github.io/chatgpt-plus-guide/chatgpt-pro/): 国内怎么开 ChatGPT Pro（Pro 100 / Pro 200）：Plus 和 Pro 到底差在哪、哪些人才需要升级、礼品卡和海外卡为什么不适合开 Pro、支付宝微信自助充值流程与注意事项（Plus 升 Pro 会覆盖、不叠加时长）。
+- [Claude Pro 国内开通指南（2026）：支付宝 / 微信付款，只要一个账号 ID](https://dsom-w.github.io/chatgpt-plus-guide/claude-pro/): 2026 年国内开通 Claude Pro 的可行方法：为什么国内卡和 App Store 都走不通、代充价格区间、只用 Organization ID 不要密码的 4 步流程（附截图）、Organization ID 安全性与常见失败原因。
+
+## 来源
+
+- 仓库：https://github.com/dsom-w/chatgpt-plus-guide
+- 内容许可：CC BY-NC-SA 4.0
