@@ -6,6 +6,14 @@
 
 文中四条路线都如实写出优缺点，按你的设备和付款条件自己选。实测部分用的是我们自己在用的平台，商业关系在文末「关于本文」里有说明。
 
+> [!TIP]
+> **不想折腾海外卡、礼品卡、美区 ID？**
+> 直接用 **支付宝 / 微信** 付款，粘贴一段账号信息，**3 分钟** Plus 开在你自己的账号上。不要密码、不换号、安卓 iPhone 都能用，不成功原路退款。
+>
+> **👉 [okai66.com — ChatGPT Plus / Pro、Claude Pro 自助开通](https://okai66.com/?utm_source=github&utm_medium=readme&utm_campaign=plus-guide-top)**
+>
+> 具体操作见下文 [实测截图](#实测支付宝--微信自助充值-chatgpt-plus附截图)；想先了解其它方式再决定，往下看四条路线对比。
+
 ---
 
 ## 目录
